@@ -1,37 +1,24 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: About Me
+tags: [about, nayeem, nayeemdev, NayeemHossain]
+date: 2020-03-21
 comments: false
 ---
     
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
+<center><a href="http://nayeemdev.github.io"><b>Nayeem Hossain</b></a> , Full Stack Web Developer.</center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
-
-## Preview
+#
 
 {% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
+    https://user-images.githubusercontent.com/40033062/94671156-50e0ec80-0335-11eb-9505-9914e4d8615b.jpg
 {% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+{% include gallery images=images caption="Screenshots of Moon Theme" cols=1 %}
+#
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+<p>
+    Birth, childhood everything was in Narail, Bangladesh. Got education from Maijpara Govt Primary School and Maijpara Secondary School, Narail. Then went to Mangrove Institute of Science and Technology(MIST) to study Dimploma in Comoputer Technology.
+</p>
 
-## Getting Started
 
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+[Hire Me](https://nayeemdev.github.io/contact){: .btn}
