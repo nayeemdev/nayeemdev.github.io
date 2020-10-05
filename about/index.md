@@ -20,5 +20,9 @@ comments: false
     Birth, childhood everything was in Narail, Bangladesh. Got education from Maijpara Govt Primary School and Maijpara Secondary School, Narail. Then went to Mangrove Institute of Science and Technology(MIST) to study Dimploma in Comoputer Technology.
 </p>
 
+<p>
+    Currently I am working at Advanced Apps Bangladesh(AAPBD) as a Software Engineer(WEB). And working with a large scale software.
+</p>
 
-[Hire Me](https://nayeemdev.github.io/contact){: .btn}
+
+[Hire Me](mailto:{{ site.email }}){: .btn}

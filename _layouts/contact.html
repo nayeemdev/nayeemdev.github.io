@@ -5,38 +5,30 @@ layout: compress
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
+<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
     {% include head.html %}
 </head>
-
 <body>
     {% include nav.html %}
     <!-- Header -->
-    <header class="header flex" role="banner">
-        <div class="container animated fadeIn">
-            <div class="row">
-                <a href="{{ site.url }}">
-                    <img src="{{ site.logo }}" class="img-circle zoombtn animated rotateIn">
-                </a>
-                <h3 class="title">
-                    <a class="zoombtn" href="{{ site.url }}">
-                        <p style="font-size:1.2rem;font-weight:300">{{ site.title }}</p>
+    <header class="header" role="banner">
+        <div class="wrapper animated fadeIn">
+            <div class="content">
+                <div class="post-title">
+                    <h1>{{ page.title }}</h1>
+                    <a class="btn zoombtn" href="{{site.url}}">
+                        <i class="fa fa-home"></i>
                     </a>
-                </h3>
-                <hr class="hr-line">
-                <h3 class="title">
-                    <a href="{{ site.url }}">
-                        <p style="font-size:1rem;font-weight:300">{{ site.bio }}</p>
-                    </a>
-                </h3>
+                </div>
+                <div class="post-list">
+                    {% if site.email %} <h3 class="title"> <a href="mailto:{{ site.email }}"> <p style="font-size:1rem;font-weight:300">Direct Email me For Contant.</p> </a> </h3> <a class="social-btn" href="mailto:{{ site.email }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-fw fa-envelope-square"></i></a>{% endif %}
+                </div>
             </div>
         </div>
     </header>
     {% include scripts.html %}
+    <script src="{{ site.url }}/assets/js/wow.min.js"></script>
+    <script type="text/javascript">(new WOW).init();</script>
 </body>
-
 </html>
