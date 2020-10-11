@@ -13,7 +13,7 @@ comments: false
 {% capture images %}
     https://user-images.githubusercontent.com/40033062/94671156-50e0ec80-0335-11eb-9505-9914e4d8615b.jpg
 {% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=1 %}
+{% include gallery images=images caption="" cols=1 %}
 #
 
 <p>
