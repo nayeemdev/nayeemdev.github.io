@@ -3,3 +3,425 @@
 @import url(vendors/photoswipe.css);
 @import url(../icons/style.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;display=swap");
+
+
+/* -----------------------------------------------------------------
+    - General Styles
+----------------------------------------------------------------- */
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  -webkit-overflow-scrolling: touch;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-overflow-x: hidden;
+}
+
+body, html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: linear-gradient(145.44deg, #F2F4FA 0%, #FAFBFC 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #5E6E80;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -ms-overflow-style: scrollbar;
+  -webkit-font-smoothing: antialiased;
+}
+@media only screen and (max-width: 580px) {
+  body {
+    line-height: 1.6;
+  }
+}
+
+html.is-scroll-disabled body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  html.is-scroll-disabled {
+    overflow: hidden;
+  }
+}
+.no-scroll {
+  overflow: hidden;
+  -ms-overflow-style: none;
+}
+
+.no-scroll-height {
+  overflow-x: hidden;
+}
+
+.svg-defs {
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.bg-triangles {
+  background-image: url(http://netgon.net/artstyles/v-card3/assets/images/triangles-top.svg), url(http://netgon.net/artstyles/v-card3/assets/images/triangles-bottom.svg), linear-gradient(145.44deg, #F2F4FA 0%, #FAFBFC 100%);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background-size: inherit;
+}
+@media only screen and (max-width: 580px) {
+  .bg-triangles {
+    background-size: contain;
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Typography
+----------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  color: #3B4B5E;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.title--h1 {
+  font-size: 2rem;
+  margin-bottom: 1.3rem;
+}
+@media only screen and (max-width: 580px) {
+  .title--h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+}
+.title--h2 {
+  font-size: 1.625rem;
+}
+@media only screen and (max-width: 580px) {
+  .title--h2 {
+    font-size: 1.375rem;
+  }
+}
+.title--h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 580px) {
+  .title--h3 {
+    font-size: 1.125rem;
+  }
+}
+.title--h4 {
+  font-size: 1.125rem;
+}
+@media only screen and (max-width: 580px) {
+  .title--h4 {
+    font-size: 1rem;
+  }
+}
+.title--h5 {
+  font-size: 1rem;
+}
+@media only screen and (max-width: 580px) {
+  .title--h5 {
+    font-size: 0.875rem;
+  }
+}
+.title--h6 {
+  font-size: 0.875rem;
+}
+@media only screen and (max-width: 580px) {
+  .title--h6 {
+    font-size: 0.75rem;
+  }
+}
+.title--tone {
+  color: #304CFD;
+}
+.title-icon {
+  margin-right: 0.5rem;
+  margin-top: -0.25rem;
+  height: 1.875rem;
+  width: 1.875rem;
+}
+@media only screen and (max-width: 580px) {
+  .title-icon {
+    height: 1.5625rem;
+    width: 1.875rem;
+  }
+}
+.title__separate {
+  margin-bottom: 2.3125rem;
+  position: relative;
+}
+.title__separate::before, .title__separate::after {
+  content: '';
+  background-color: #304CFD;
+  border-radius: 0.5rem;
+  height: 5px;
+  position: absolute;
+  bottom: -1.125rem;
+  left: 0;
+  width: 3.125rem;
+  z-index: 1;
+}
+.title__separate::after {
+  background-color: #FF965D;
+  width: 1rem;
+}
+@media only screen and (max-width: 580px) {
+  .title__separate {
+    margin-bottom: 1.5625rem;
+  }
+  .title__separate::before, .title__separate::after {
+    height: 0.1875rem;
+    bottom: -0.625rem;
+  }
+  .title__separate::before {
+    width: 3rem;
+  }
+  .title__separate::after {
+    width: 1rem;
+  }
+}
+
+.weight--400 {
+  font-weight: 400;
+}
+.weight--500 {
+  font-weight: 500;
+}
+.weight--600 {
+  font-weight: 600;
+}
+
+.overhead {
+  color: rgba(94, 110, 128, 0.8);
+  font-size: 0.75rem;
+  display: block;
+  text-transform: uppercase;
+}
+
+.block-quote {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: italic;
+  margin: 1.8125rem 0;
+  position: relative;
+  line-height: 1.6;
+}
+@media only screen and (max-width: 991px) {
+  .block-quote {
+    padding-left: 3.75rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .block-quote {
+    font-size: 1.125rem;
+    margin: 0.625rem 0 1.25rem;
+    padding-left: 0;
+    padding-top: 2.5rem;
+  }
+}
+.block-quote::before {
+  background-image: url(http://netgon.net/artstyles/v-card3/assets/icons/icon-quote.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  content: '';
+  height: 2.125rem;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: -3.375rem;
+  width: 2.125rem;
+}
+@media only screen and (max-width: 991px) {
+  .block-quote::before {
+    left: 0;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .block-quote::before {
+    right: 0;
+  }
+}
+.block-quote__author {
+  font-size: 0.875rem;
+  font-style: normal;
+  display: block;
+  margin-top: 0.625rem;
+  padding-left: 3rem;
+  position: relative;
+}
+@media only screen and (max-width: 580px) {
+  .block-quote__author {
+    font-size: 0.875rem;
+    margin-top: 0;
+    padding-left: 2rem;
+  }
+}
+.block-quote__author::before {
+  content: '';
+  background-color: #5E6E80;
+  height: 1px;
+  margin-bottom: auto;
+  margin-top: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2rem;
+}
+@media only screen and (max-width: 580px) {
+  .block-quote__author::before {
+    width: 1rem;
+  }
+}
+
+a {
+  color: #304CFD;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+  transition: color 0.3s cubic-bezier(0.72, 0.16, 0.345, 0.875);
+}
+a:hover {
+  color: #304CFD;
+  outline: none;
+  text-decoration: underline;
+}
+a.decoration--none {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+iframe {
+  background-color: #5E6E80;
+  border: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.cover {
+  border-radius: 0.375rem;
+  object-fit: cover;
+  object-position: center;
+  font-family: 'object-fit: cover; object-position: center;';
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (max-width: 580px) {
+  .cover {
+    border-radius: 0.25rem;
+  }
+}
+
+::-moz-selection {
+  background: transparent;
+  color: #304CFD;
+}
+
+::selection {
+  background: transparent;
+  color: #304CFD;
+}
+
+/* -----------------------------------------------------------------
+    - Preloader
+----------------------------------------------------------------- */
+.preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1106;
+    opacity: 1;
+  }
+  .preloader > * {
+    min-width: 0;
+  }
+  .preloader__wrap {
+    width: 100%;
+    max-width: 9.375rem;
+  }
+  .preloader__progress {
+    background: #fff;
+    height: 0.125rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+  .preloader__progress span {
+    background: #304CFD;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+  }
+  
+  .circle-pulse > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transform: scale(0);
+    animation: pulse 1.6s linear infinite;
+  }
+  
+  .circle-pulse__1 {
+    width: 6rem;
+    height: 6rem;
+    margin-top: -3rem;
+    margin-left: -3rem;
+    background-color: #304CFD;
+  }
+  
+  .circle-pulse__2 {
+    width: 4.8rem;
+    height: 4.8rem;
+    margin-top: -2.4rem;
+    margin-left: -2.4rem;
+    background-color: rgba(48, 76, 253, 0.7);
+    animation-delay: -0.8s;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0, 0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
