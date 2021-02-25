@@ -72,7 +72,7 @@ html.is-scroll-disabled body {
 }
 
 .bg-triangles {
-  background-image: url(http://netgon.net/artstyles/v-card3/assets/images/triangles-top.svg), url(http://netgon.net/artstyles/v-card3/assets/images/triangles-bottom.svg), linear-gradient(145.44deg, #F2F4FA 0%, #FAFBFC 100%);
+  background-image: url(../img/triangles-top.svg), url(../img/triangles-bottom.svg), linear-gradient(145.44deg, #F2F4FA 0%, #FAFBFC 100%);
   background-position: left top, right bottom;
   background-repeat: no-repeat;
   background-size: inherit;
@@ -233,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .block-quote::before {
-  background-image: url(http://netgon.net/artstyles/v-card3/assets/icons/icon-quote.svg);
+  background-image: url(../img/icon-quote.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1351,7 +1351,7 @@ button:focus {
 }
 
 #marker {
-  background-image: url("http://netgon.net/artstyles/v-card3/assets/images/icon-map-pic.svg");
+  background-image: url("../img/icon-map-pic.svg");
   background-size: cover;
   width: 3.125rem;
   height: 3.125rem;
@@ -1665,7 +1665,7 @@ button:focus {
 }
 .news-item__image-wrap::after {
   content: '';
-  background-image: url(http://netgon.net/artstyles/v-card3/assets/icons/icon-news.svg);
+  background-image: url(../img/icon-news.svg);
   height: 2.5rem;
   margin: auto;
   opacity: 0;
@@ -2177,7 +2177,7 @@ button:focus {
 .review-item {
   display: flex;
   background-color: #F7F9FA;
-  background-image: url(http://netgon.net/artstyles/v-card3/assets/icons/icon-quote.svg);
+  background-image: url(../img/icon-quote.svg);
   background-repeat: no-repeat;
   background-position: right 1.875rem top 1.875rem;
   border-radius: 20px;

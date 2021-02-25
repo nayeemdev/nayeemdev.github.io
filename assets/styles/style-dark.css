@@ -9,7 +9,7 @@ body {
 
 .bg-triangles {
   background-color: #1D1E24;
-  background-image: url(http://netgon.net/artstyles/v-card3/assets/images/triangles-top.svg), url(http://netgon.net/artstyles/v-card3/assets/images/triangles-bottom.svg);
+  background-image: url(../img/triangles-top.svg), url(../img/triangles-bottom.svg);
 }
 
 /* -----------------------------------------------------------------
@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .block-quote::before {
-  background-image: url(http://netgon.net/artstyles/v-card3/assets/icons/icon-quote-dark.svg);
+  background-image: url(../img/icon-quote-dark.svg);
 }
 .block-quote__author::before {
   background-color: #AEB0B8;
@@ -316,7 +316,7 @@ select option,
 ----------------------------------------------------------------- */
 .review-item {
   background-color: #1D1E24;
-  background-image: url(http://netgon.net/artstyles/v-card3/assets/icons/icon-quote-dark.svg);
+  background-image: url(../img/icon-quote-dark.svg);
 }
 
 .swiper-pagination-bullet {
