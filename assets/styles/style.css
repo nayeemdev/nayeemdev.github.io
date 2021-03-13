@@ -2444,3 +2444,7 @@ button:focus {
   height: 100%;
   z-index: -1;
 }
+
+.toggle-btn {
+  height: 40px;
+}

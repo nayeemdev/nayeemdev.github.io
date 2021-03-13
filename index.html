@@ -58,6 +58,14 @@
 	</div>
 
 	<main class="main">
+		<!-- Dark/Light Toggle -->
+		<div class="dark-light float-right sticky-top m-3">
+			<div class="btn-group" role="group" aria-label="Basic example">
+				<button type="button" class="btn toggle-btn bg-white light">Light</button>
+				<button type="button" class="btn toggle-btn bg-dark dark">Dark</button>
+			  </div>
+		</div>
+
 		<!-- Header Image -->
 		<div class="header-image">
 			<div class="js-parallax" style="background-image: url(assets/img/header_bg_1x.png);"></div>
@@ -699,9 +707,12 @@
 	<script src="assets/demo/plugins-demo.js"></script>
 
 	<script>
-		$('#grayscale').click(function (){
-			console.log('dsa');
-			$('head link[href="assets/styles/style.css"]').attr('href','assets/styles/style-dark.css');
+		$('.light').click(function (){
+			$('head link[href="assets/styles/style-dark.css"]').attr('href','assets/styles/style-white.css');
+		});
+
+		$('.dark').click(function (){
+			$('head link[href="assets/styles/style-white.css"]').attr('href','assets/styles/style-dark.css');
 		});
 	</script>
 	<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="nayeemdev" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
