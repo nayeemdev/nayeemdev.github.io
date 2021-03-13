@@ -59,10 +59,10 @@
 
 	<main class="main">
 		<!-- Dark/Light Toggle -->
-		<div class="dark-light float-right sticky-top m-3">
-			<div class="btn-group" role="group" aria-label="Basic example">
-				<button type="button" class="btn toggle-btn bg-white light">Light</button>
-				<button type="button" class="btn toggle-btn bg-dark dark">Dark</button>
+		<div class="dark-light m-3">
+			<div class="btn-group" role="group">
+				<button data-toggle="tooltip" title="Switch to Light Mode" type="button" class="btn toggle-btn light"><i class="fas fa-sun"></i></button>
+				<button data-toggle="tooltip" title="Switch to Dark Mode" type="button" class="btn toggle-btn dark"><i class="fas fa-moon"></i></button>
 			  </div>
 		</div>
 
@@ -714,8 +714,12 @@
 		$('.dark').click(function (){
 			$('head link[href="assets/styles/style-white.css"]').attr('href','assets/styles/style-dark.css');
 		});
+
+		$('[data-toggle="tooltip"]').tooltip({
+			trigger : 'hover'
+		});
 	</script>
-	<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="nayeemdev" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+	<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="nayeemdev" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="80"></script>
 </body>
 
 </html>

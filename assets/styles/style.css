@@ -2444,7 +2444,20 @@ button:focus {
   height: 100%;
   z-index: -1;
 }
+.dark-light {
+  z-index: 1105; 
+  position: absolute;
+  top: 0; 
+  right: 0; 
+}
 
 .toggle-btn {
   height: 40px;
+}
+
+@media only screen and (max-width: 580px) {
+  .toggle-btn {
+    height: 25px;
+    padding: 0 10px;
+  }
 }
