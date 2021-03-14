@@ -40,8 +40,6 @@
 
 	<!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
-	<link rel="stylesheet" id="dark-mode" type="text/css" href="assets/styles/style-dark.css" />
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
 </head>
 
@@ -702,18 +700,24 @@
 	<script src="assets/js/plugins.min.js"></script>
 	<script src="assets/js/common.js"></script>
 
-	<!-- Mapbox init -->
-	<script src="assets/js/mapbox.init.js"></script>
-
-	<script src="assets/demo/plugins-demo.js"></script>
-
 	<script>
+		if (localStorage.getItem("theme") === null) {
+			localStorage.setItem('theme', 'dark');
+		} 
+		if(localStorage.getItem('theme') === 'dark') {
+			$('head').append('<link rel="stylesheet" id="dark-mode" type="text/css" href="assets/styles/style-dark.css" />');
+		} else {
+			$('head link[href="assets/styles/style-dark.css"]').remove();
+		}
+
 		$('.light').click(function (){
-			$('head link[href="assets/styles/style-dark.css"]').attr('href','assets/styles/style-white.css');
+			localStorage.setItem('theme', 'light');
+			$('head link[href="assets/styles/style-dark.css"]').remove();
 		});
 
 		$('.dark').click(function (){
-			$('head link[href="assets/styles/style-white.css"]').attr('href','assets/styles/style-dark.css');
+			localStorage.setItem('theme', 'dark');
+			$('head').append('<link rel="stylesheet" id="dark-mode" type="text/css" href="assets/styles/style-dark.css" />');
 		});
 
 		$('[data-toggle="tooltip"]').tooltip({
