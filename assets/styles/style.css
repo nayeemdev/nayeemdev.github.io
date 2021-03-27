@@ -97,6 +97,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2rem;
   margin-bottom: 1.3rem;
 }
+
+.sm-font-color {
+  font-size: 8px;
+  color: #93a0a7;
+}
+
 @media only screen and (max-width: 580px) {
   .title--h1 {
     font-size: 1.75rem;
