@@ -79,9 +79,6 @@ iframe {
   color: #93959C;
 }
 
-.custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(13, 134, 255, 0.25);
-}
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
   border-color: #0D86FF;
 }
@@ -104,7 +101,6 @@ select option,
 
 .dropdown-menu {
   background-color: #33363D;
-  box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.5);
   color: #AEB0B8;
 }
 .dropdown-menu::before {
@@ -116,7 +112,6 @@ select option,
 
 .tooltip-inner {
   background-color: #AEB0B8;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25), 0 0.125rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 .bs-tooltip-top .arrow::before,
@@ -140,7 +135,7 @@ select option,
 }
 
 .btn {
-  background-image: linear-gradient(142.17deg, #0DA2FF 6.66%, #0055FF 91.48%);
+  background:#0055FF;
   color: #FCFCFC;
 }
 .btn:hover {
@@ -193,7 +188,6 @@ select option,
 ----------------------------------------------------------------- */
 .box {
   background-color: #23262B;
-  box-shadow: -4px 8px 24px rgba(0, 0, 0, 0.07);
 }
 .box__border {
   border-color: #33363D;
@@ -218,11 +212,6 @@ select option,
     border-color: #33363D;
   }
 }
-@media only screen and (max-width: 580px) {
-  .sidebar {
-    box-shadow: 0px 20px 40px rgba(103, 118, 128, 0.2);
-  }
-}
 
 .nav__item a {
   background-color: #2E2F36;
@@ -237,8 +226,7 @@ select option,
   }
 }
 .nav__item a.active {
-  background-image: linear-gradient(142.17deg, #0DA2FF 6.66%, #0055FF 91.48%);
-  box-shadow: inset -4px -4px 5px rgba(0, 0, 0, 0.2), inset 4px 4px 5px rgba(255, 255, 255, 0.23);
+  background:  #0055FF;
   color: #FCFCFC;
 }
 .nav__item a.active:hover {
@@ -246,8 +234,7 @@ select option,
 }
 @media only screen and (max-width: 580px) {
   .nav__item a.active {
-    background-image: none;
-    box-shadow: none;
+    background: none;
     color: #0D86FF;
   }
   .nav__item a.active:hover {
@@ -290,10 +277,6 @@ select option,
 
 .comment-form .icon-smile:hover {
   color: #0D86FF;
-}
-
-.emoji-wrap .emoji:hover {
-  box-shadow: 0 0 0 0.125rem rgba(174, 176, 184, 0.5);
 }
 
 .scroll-line {
@@ -346,7 +329,6 @@ select option,
   }
   .select ul {
     background-color: #2E2F36;
-    box-shadow: 0 0.625rem 3.75rem rgba(0, 0, 0, 0.5);
   }
   .select ul li {
     color: #AEB0B8;
@@ -379,7 +361,6 @@ select option,
 }
 .timeline__item::before {
   background-color: #0D86FF;
-  box-shadow: 0 0 0 0.1875rem rgba(13, 134, 255, 0.25);
 }
 .timeline__period {
   color: rgba(174, 176, 184, 0.7);
@@ -390,7 +371,7 @@ select option,
   background-color: #2E2F36;
 }
 .progress-bar {
-  background-image: linear-gradient(142.17deg, #0DA2FF 6.66%, #0055FF 91.48%);
+  background: #0055FF;
 }
 
 /* -----------------------------------------------------------------
