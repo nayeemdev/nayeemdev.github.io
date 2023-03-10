@@ -140,7 +140,7 @@ select option,
 }
 
 .btn {
-  background-image: linear-gradient(142.17deg, #0DA2FF 6.66%, #0055FF 91.48%);
+  background:#0055FF;
   color: #FCFCFC;
 }
 .btn:hover {
@@ -237,8 +237,7 @@ select option,
   }
 }
 .nav__item a.active {
-  background-image: linear-gradient(142.17deg, #0DA2FF 6.66%, #0055FF 91.48%);
-  box-shadow: inset -4px -4px 5px rgba(0, 0, 0, 0.2), inset 4px 4px 5px rgba(255, 255, 255, 0.23);
+  background:  #0055FF;
   color: #FCFCFC;
 }
 .nav__item a.active:hover {
@@ -246,8 +245,7 @@ select option,
 }
 @media only screen and (max-width: 580px) {
   .nav__item a.active {
-    background-image: none;
-    box-shadow: none;
+    background: none;
     color: #0D86FF;
   }
   .nav__item a.active:hover {
@@ -390,7 +388,7 @@ select option,
   background-color: #2E2F36;
 }
 .progress-bar {
-  background-image: linear-gradient(142.17deg, #0DA2FF 6.66%, #0055FF 91.48%);
+  background: #0055FF;
 }
 
 /* -----------------------------------------------------------------
