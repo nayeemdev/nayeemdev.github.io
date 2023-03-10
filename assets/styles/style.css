@@ -1171,7 +1171,7 @@ button:focus {
 }
 @media only screen and (max-width: 580px) {
   .nav__item a.active {
-    background-image: none;
+    background: none;
     box-shadow: none;
     color: #304CFD;
   }
@@ -2180,7 +2180,7 @@ button:focus {
 }
 @media only screen and (max-width: 580px) {
   .review-item {
-    background-image: none;
+    background: none;
     border-radius: 13.3333333333px;
     flex-direction: column;
     align-items: center;
