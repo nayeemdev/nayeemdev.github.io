@@ -491,9 +491,6 @@ textarea:invalid {
   outline: none !important;
 }
 
-.custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: 0 0 0 0.2rem rgba(48, 76, 253, 0.25);
-}
 .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
   border-color: #304CFD;
 }
@@ -527,7 +524,6 @@ select option,
 .dropdown-menu {
   border: 0;
   border-radius: 12px;
-  box-shadow: 0 0.5rem 2.5rem rgba(94, 110, 128, 0.25);
   color: #5E6E80;
   font-size: 0.9375rem;
 }
@@ -556,7 +552,6 @@ select option,
   padding: 0.25rem 0.625rem 0.25rem;
   background-color: #5E6E80;
   border-radius: 0.25rem;
-  box-shadow: 0 1rem 2rem rgba(94, 110, 128, 0.25), 0 0.125rem 1rem rgba(94, 110, 128, 0.5);
 }
 .tooltip.show {
   opacity: 1;
@@ -802,7 +797,6 @@ button:focus {
   background-color: #fff;
   border: 0.375rem solid #fff;
   border-radius: 2.9375rem;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.05);
   margin-top: -4.125rem;
   height: 10.125rem;
   overflow: hidden;
@@ -907,10 +901,8 @@ button:focus {
 .box {
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: 0px 20px 40px rgba(103, 118, 128, 0.03);
   padding: 1.875rem;
   position: relative;
-  transition: box-shadow .3s ease-in-out;
 }
 @media only screen and (max-width: 580px) {
   .box {
@@ -1077,7 +1069,6 @@ button:focus {
   .sidebar {
     border-bottom: 0;
     border-radius: 0;
-    box-shadow: 0px 20px 40px rgba(103, 118, 128, 0.2);
     padding: 0.5rem 0.9375rem;
     position: fixed;
     bottom: 0;
@@ -1563,7 +1554,6 @@ button:focus {
   }
   .select ul {
     background-color: #fff;
-    box-shadow: 0 0.625rem 3.75rem rgba(141, 153, 166, 0.25);
     border-radius: 20px;
     display: none;
     max-height: 37.5rem;
@@ -2107,9 +2097,6 @@ button:focus {
   margin: 0.125rem;
   padding: 0.1875rem;
 }
-.emoji-wrap .emoji:hover {
-  box-shadow: 0 0 0 0.125rem rgba(141, 153, 166, 0.2);
-}
 
 .scroll-line {
   background: #304CFD;
@@ -2295,7 +2282,6 @@ button:focus {
 .timeline__item::before {
   content: '';
   background-color: #304CFD;
-  box-shadow: 0 0 0 0.1875rem rgba(48, 76, 253, 0.25);
   border-radius: 50%;
   position: absolute;
   top: 0;
